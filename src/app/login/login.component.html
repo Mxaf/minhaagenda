@@ -1,0 +1,24 @@
+
+<div class="container">
+
+    <h2>Login</h2>
+
+    <!-- <form [formGroup]="login" (ngSubmit)="onSubmit()"> -->
+        <div class="row">
+            <label> Usuário <br>
+                <input [(ngModel)]="usuario.nome" id="usuario" type="text" required>
+            </label>
+        </div>
+
+        <div class="row">
+            <label> Senha <br>
+                <input [(ngModel)]="usuario.senha" id="senha" type="password" required>
+            </label>
+        </div>
+
+    <button type="submit" [disabled]="!login.valid" (click)="fazerLogin()">
+        Entrar
+    </button>
+
+</div>
+<!-- </form> -->
